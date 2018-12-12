@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+.banner img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+img:hover {
+ background-color: blue;
+
+}
+a {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 24px;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: white;
+}
+#mainmenu{
+
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 36px;
+    position: relative;
+}
+.dong1 img {
+    
+    width: 120px;
+    height: 180px;
+    float: left;
+    width: 33.1111%;
+    padding: 1%;
+    margin: 5px auto;
+}
+#menu{
+    position: obsolute;
+}
+#menu ul li {
+ position: relative;
+}
+#menu ul {
+ background: #8AD385;
+ width: 250px;
+ padding: 0;
+ list-style-type: none;
+ text-align: left;
+}
+#menu li {
+ width: auto;
+ height: 40px;
+ line-height: 40px;
+ border-bottom: 1px solid #e8e8e8;
+ padding: 0 1em;
+}
+#menu li a {
+ text-decoration: none;
+ color: #333;
+ font-weight: bold;
+ display: block;
+}
+#menu li:hover {
+ background: #CDE2CD;
+}
+#menu .sub-menu {
+ position: absolute;
+ left: 250px;
+ top: 0;
+ display: none;
+}
+#menu li:hover .sub-menu {
+ display: block;
+}
+#chat{
+    position: fixed;
+    right: 45px;
+    bottom: 35px;
+}
