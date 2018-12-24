@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img.title {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    opacity: 0;
+    animation: logo 1s forwards;
+    animation-delay: 1.5s;
+}
+img.logo {
+    position: absolute;
+    z-index: 1;
+    left: 32%;
+    top: 42%;
+    opacity: 0;
+    animation: logo 1s forwards;
+    animation-delay: 2.8s;
+}
+@-webkit-keyframes logo {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+img.hoatiet1 {
+    position: absolute;
+    bottom: 17%;
+    right: 8%;
+    opacity: 0;
+    animation: phongto 1s forwards;
+    animation-delay: 1.8s;
+}
+@-webkit-keyframes phongto {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+img.dammay {
+ position: relative;
+ width: 1600px;
+}
+@-webkit-keyframes dilen {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+img.cowboy {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    right: 16%;
+    height: 75%;
+    opacity: 0;
+    animation: cowboy 1s forwards;
+    animation-delay: 0.9s;
+}
+@-webkit-keyframes cowboy {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+      }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+}
+
+header.main {
+    height: 900px;
+    background-image: url('photos/background.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
