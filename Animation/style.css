@@ -29,42 +29,6 @@ img.logo {
         transform: scale(1);
     }
 }
-img.hoatiet1 {
-    position: absolute;
-    bottom: 17%;
-    right: 8%;
-    opacity: 0;
-    animation: phongto 1s forwards;
-    animation-delay: 1.8s;
-}
-@-webkit-keyframes phongto {
-    0%{
-        opacity: 0;
-        transform: scale(0);
-    }
-    50%{
-        opacity: 1;
-        transform: scale(1.5);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-img.dammay {
- position: relative;
- width: 1600px;
-}
-@-webkit-keyframes dilen {
-    0%{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 img.cowboy {
     position: absolute;
     bottom: 0px;
