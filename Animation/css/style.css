@@ -51,7 +51,6 @@ img.hoatiet1 {
         transform: scale(1);
     }
 }
-
 img.dammay {
  position: relative;
  width: 1600px;
@@ -65,9 +64,7 @@ img.dammay {
         opacity: 1;
         transform: translateY(0px);
     }
-
 }
-
 img.cowboy {
     position: absolute;
     bottom: 0px;
@@ -88,7 +85,6 @@ img.cowboy {
         transform: translateY(0px);
       }
 }
-
 header.main {
     height: 900px;
     background-image: url('photos/background.jpg');
