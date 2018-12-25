@@ -33,7 +33,7 @@ img.cowboy {
     position: absolute;
     bottom: 0px;
     z-index: 2;
-    right: 10%;
+    right: 3%;
     height: 100%;
     opacity: 0;
     animation: cowboy 1s forwards;
@@ -50,7 +50,7 @@ img.cowboy {
       }
 }
 header.main {
-    height: 923px;
+    height: 969px;
     background-image: url('photos/background.jpg');
     background-size: cover;
     position: relative;
