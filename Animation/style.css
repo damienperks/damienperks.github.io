@@ -50,9 +50,10 @@ img.cowboy {
       }
 }
 header.main {
-    height: 920px;
+    height: 100%;
+    width: 100%;
     background-image: url('photos/background.jpg');
     background-size: cover;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
