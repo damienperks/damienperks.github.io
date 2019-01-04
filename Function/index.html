@@ -54,7 +54,32 @@
         }
         //Test case bai6
         //console.log(bai6(["Jake","Amy","Charles","Terry","Rosa"]));
-        
+        var aboutMe = function(){
+	    var greetings = " Hello, my name is "+ this.lastName+' '+ this.firstName+". I am "+ this.age+" years old.";
+	    return document.write(greetings);
+        }
+        var parent = {
+	    firstName: "Anh",
+	    lastName: "Phan Ngọc",
+	    age: 48,
+	    say: function(){}
+        }
+        var student = {
+	    firstName: "Khoa",
+	    lastName: "Phan Anh",
+	    age: 15,
+	    say: function(){}
+        }
+        var teacher = {
+	    firstName: "Thương",
+	    lastName: "Phan Thị",
+	    age: 35,
+	    say: function(){}
+        }
+        //Test case bai7
+        //console.log(parent.say=aboutMe; parent.say());
+        //console.log(student.say=aboutMe; student.say());
+        //console.log(teacher.say=aboutMe; teacher.say());
     </script>
 </body>
 </html>
