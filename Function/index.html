@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        function bai1(n){
+            if(typeof n == 'number'){
+                return n*n;
+            } 
+            alert('Try again')
+        }
+        //test case bai 1
+        //console.log(bai1(3));
+        //console.log(bai1(5)); 
+        function bai2(a, b , c){
+            let x = 3*a+2*b-c
+            if(typeof a == 'number', typeof b == 'number', typeof c == 'number' ){
+                return bai1(x);
+            } 
+            alert('Try again')
+        }
+        // Test case bai2
+        //console.log(bai2(3, 5, 7));
+        //console.log(bai2(1, 2, 4));
+        function bai3(str) {
+            let newstr = str.slice(0,9) + '...'
+            document.write(newstr);
+        }
+        // Test case bai3
+        //console.log(bai3("Travis Scott is the best rapper in the world"));
+        
+    </script>
+</body>
+</html>
