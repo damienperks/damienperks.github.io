@@ -38,10 +38,16 @@
 	        var b = a.length;
 	        var c = a.slice(1,b);
 	        var d = a[0].toUpperCase() + c;
-	        return(d);
+            document.write(d);
         }
         //Test case bai4
-        //console.log(bai4("welcome to Astroworld"))
+        //console.log(bai4("welcome to Astroworld"));
+        function bai5(a) {
+	    a.sort(function(a,b){return a-b});
+	    return a[0];
+        }
+        //Test case bai5
+        //console.log(bai5(384,981,560,794));
     </script>
 </body>
 </html>
