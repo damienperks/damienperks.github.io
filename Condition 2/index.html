@@ -43,28 +43,24 @@ document.write("...</br>");
 //Bai2
 //Test case
 function xepLoai(x) {
-	var diem = "";
+	var grade = "";
 	if (x<=10 && x>=8.5) {
-		diem = "Điểm A </br>";
+		grade = "Điểm A </br>";
 	} else if (x>=7) {
-		diem = "Điểm B </br>";
+		grade = "Điểm B </br>";
 	} else if (x>=5.5) {
-		diem = "Điểm C </br>";
+		grade = "Điểm C </br>";
 	} else if (x>=4) {
-		diem = "Điểm D </br>";
+		grade = "Điểm D </br>";
 	} else {
-		diem = "Điểm F </br>";
+		grade = "Điểm F </br>";
 	}
-	document.write(diem);
+	document.write(grade);
 }
-
-//Bai 4
+//Bai3
 //Test case
-//translate("Tiếng Tây Ban Nha")
-//Kết quả: Hola
-
-function translate(ngonNgu) {
-	switch (ngonNgu) {
+function translate(language) {
+	switch (language) {
 		case "Tiếng Anh" :
 			document.write("Hello</br>");
 			break;
@@ -85,7 +81,10 @@ function translate(ngonNgu) {
 			break;
 	}
 }
-
+//Bai4
+//Test case
+//Translate(Tiếng Anh);
+//Results: Hello
 //Bai 5
 //bai5([false,false,false,false,true,false]);
 //Ket qua: True xuất hiện lần đầu trong mảng tại vị trí: 5
