@@ -27,30 +27,21 @@ document.write("Today is: " + date + "/" + month + "/" + year + ".</br>");
 document.write("This season is: " + season + ".</br");
 //Bai1
 //Test case
-function catChuoi(chuoi) {
-	if (typeof chuoi == "number") {
-		
-		chuoi = chuoi.toString();
-
-	}
-
-	if (chuoi.length<10) {
-		
-		document.write(chuoi+"</br>");
-
-	} else {
-		
+        function cutstring(string) {
+	if (typeof string == "number") {
+		string = string.toString();
+	    }
+	if (string.length<10) {
+document.write(string+"</br>");
+	} else {	
 		for (var i = 0; i<10; i++) {
-		document.write(chuoi[i]);
+document.write(string[i]);
 		};
-
-		document.write("...</br>");
-	}
-}
-
-//Bai 3
+document.write("...</br>");
+	    }
+    }
+//Bai2
 //Test case
-
 function xepLoai(x) {
 	var diem = "";
 	if (x<=10 && x>=8.5) {
