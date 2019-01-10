@@ -8,33 +8,25 @@
 </head>
 <body>
     <script>
+        var now = new Date();
+        var date = now.getDate();
+        var month = now.getMonth()+1;
+        var year = now.getFullYear();
+document.write("Today is: " + date + "/" + month + "/" + year + ".</br>");
+
+        var season = "";
+    if (month<=3 && month>=1) {
+	    season = "Spring";
+    } else if (month<=6) {
+	    season = "Summer";
+    } else if (month<=9) {
+	    season = "Autumn";
+    } else {
+	    season = "Winter";
+    }
+document.write("This season is: " + season + ".</br");
 //Bai1
-//
-
-var now = new Date();
-var date = now.getDate();
-var month = now.getMonth()+1;
-var year = now.getFullYear();
-
-document.write("Hôm nay là ngày: " + date + "/" + month + "/" + year + ".</br>");
-
-var mua = "";
-if (month<=3 && month>=1) {
-	mua = "Xuân";
-} else if (month<=6) {
-	mua = "Hè";
-} else if (month<=9) {
-	mua = "Thu";
-} else {
-	mua = "Đông";
-}
-
-document.write("Hôm nay là mùa: " + mua + ".</br");
-
-//Bai 2: Cắt chuỗi
 //Test case
-//
-
 function catChuoi(chuoi) {
 	if (typeof chuoi == "number") {
 		
