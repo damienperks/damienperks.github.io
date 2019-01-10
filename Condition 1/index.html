@@ -14,17 +14,17 @@
 //bai1("y",true) => Có ít nhất một giá trị không là số!
 
 function bai1(a, b) {
-	if (typeof a == "number" && typeof b == "number"){
-		if(a>b){
-			return a;
-		} else {
-			return b;
-		}
-	}
+if (typeof a == "number" && typeof b == "number"){
+if(a>b){
+return a;
+} else {
+return b;
+}
+}
 
-	else {
-		document.write("Có ít nhất một giá trị không là số!</br>")
-	}
+else {
+document.write("Có ít nhất một giá trị không là số!</br>")
+}
 }
 
 //Bai 2
@@ -33,16 +33,16 @@ function bai1(a, b) {
 //bai2(6) => 6!=720
 
 function bai2(a) {
-	if (a>0) {
-		var m = a;
-	for (var i=1;i<m;i++) {
-		a=a*(m-i);
-	}
-	return document.write(m + "!= " + a + "</br>");
-	}
-	else {
-		document.write("Số âm không có giai thừa!");
-	}
+if (a>0) {
+var m = a;
+for (var i=1;i<m;i++) {
+a=a*(m-i);
+}
+return document.write(m + "!= " + a + "</br>");
+}
+else {
+document.write("Số âm không có giai thừa!");
+}
 }
 
 //Bai 3
@@ -53,14 +53,14 @@ function bai2(a) {
 //(6) [2, 2, 4, 4, 8, 334]
 
 function bai3(mangSo) {
-	var soChan = [];
-	for (var i = 0; i<mangSo.length; i++) {
-		if((mangSo[i]%2) == 0) {
-			soChan.push(mangSo[i]);
-		}
-	}
-	soChan.sort(function(a,b){return (a-b)});
-	return soChan;
+var soChan = [];
+for (var i = 0; i<mangSo.length; i++) {
+if((mangSo[i]%2) == 0) {
+soChan.push(mangSo[i]);
+}
+}
+soChan.sort(function(a,b){return (a-b)});
+return soChan;
 }
 
 //Bai 4
@@ -69,27 +69,27 @@ function bai3(mangSo) {
 //cham.check=kiemTra; cham.check(); => Không hợp lệ
 
 var hiep = {
-	userName: "hieptoan92",
-	password: "secretery",
-	confirm: "secretery",
-	check: function(){}
+userName: "hieptoan92",
+password: "secretery",
+confirm: "secretery",
+check: function(){}
 };
 
 var cham = {
-	userName: "KaKa",
-	password: "12345",
-	confirm: "13452",
-	check: function(){}
+userName: "KaKa",
+password: "12345",
+confirm: "13452",
+check: function(){}
 };
 
 var kiemTra =	function () {
-					if ((this.userName.length > 0) && (this.userName.length<20) && (this.password.length>=6 && this.password.length<=32) && (this.confirm == this.password)) {
-						document.write("Hợp lệ.");
-					}
-					else {
-						document.write("Không hợp lệ.");
-					}
-				};
+if ((this.userName.length > 0) && (this.userName.length<20) && (this.password.length>=6 && this.password.length<=32) && (this.confirm == this.password)) {
+document.write("Hợp lệ.");
+}
+else {
+document.write("Không hợp lệ.");
+}
+};
     
     </script>
 </body>
