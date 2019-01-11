@@ -53,30 +53,29 @@
         // (3) [2, 4, 8]
         //bai3([4,5,3,7,8,9,2,1,2,5,4,3,334]);
         //(6) [2, 2, 4, 4, 8, 334]
-var hiep = {
-userName: "hieptoan92",
-password: "secretery",
-confirm: "secretery",
-check: function(){}
-};
-var cham = {
-userName: "KaKa",
-password: "12345",
-confirm: "13452",
-check: function(){}
-};
-var kiemTra =	function () {
-if ((this.userName.length > 0) && (this.userName.length<20) && (this.password.length>=6 && this.password.length<=32) && (this.confirm == this.password)) {
-document.write("Hợp lệ.");
-}
-else {
-document.write("Không hợp lệ.");
-}
-};
-//Bai 4
-//Test case
-//hiep.check=kiemTra; hiep.check(); => Hợp lệ
-//cham.check=kiemTra; cham.check(); => Không hợp lệ
+        var hiep = {
+        userName: "hieptoan92",
+        password: "secretery",
+        confirm: "secretery",
+        check: function(){}
+        };
+        var cham = {
+        userName: "KaKa",
+        password: "12345",
+        confirm: "13452",
+        check: function(){}
+        };
+        var kiemTra =	function () {
+        if ((this.userName.length > 0) && (this.userName.length<20) && (this.password.length>=6 && this.password.length<=32) && (this.confirm == this.password)) {
+        document.write("Hợp lệ.");
+        }
+        else {
+        document.write("Không hợp lệ.");
+        }
+        };
+        //Test case bai4
+        //hiep.check=kiemTra; hiep.check(); => Hợp lệ
+        //cham.check=kiemTra; cham.check(); => Không hợp lệ
     </script>
 </body>
 </html>
