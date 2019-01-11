@@ -21,7 +21,7 @@
             }
         }
         //Test case bai1
-        //bai1(4,6) => 6
+        //bai1(4,6) => 6;
         //bai1("y",true) => One number was not identified, try again.
         function bai2(a) {
             if (a>0) {
@@ -36,46 +36,46 @@
             }
         }
         //Test case bai2
-        //bai2(-6) => Negative numbers have no factorials.
+        //bai2(-6) => Negative numbers have no factorials.;
         //bai2(6) => 6!=720
-        function bai3(mangSo) {
-            var soChan = [];
-            for (var i = 0; i<mangSo.length; i++) {
-            if((mangSo[i]%2) == 0) {
-                soChan.push(mangSo[i]);
+        function bai3(arrayofnum) {
+            var EvenNumbers = [];
+            for (var i = 0; i<arrayofnum.length; i++) {
+            if((EvenNumbers[i]%2) == 0) {
+                EvenNumbers.push(arrayofnum[i]);
                 }
             }
-            soChan.sort(function(a,b){return (a-b)});
-            return soChan;
+            EvenNumbers.sort(function(a,b){return (a-b)});
+            return EvenNumbers;
         }
         //Test case bai3
-        //bai3([4,5,3,7,8,9,2,1]);
-        // (3) [2, 4, 8]
-        //bai3([4,5,3,7,8,9,2,1,2,5,4,3,334]);
-        //(6) [2, 2, 4, 4, 8, 334]
+        //bai3([1,2,3,4,5,6,7,8,9]);
+        // (3) [2, 4, 6, 8]
+        //bai3([23, 84, 67, 29, 13, 99, 44, 202]);
+        //(6) [44, 84, 202]
         var Amy = {
-        userName: "amysantiago",
+        username: "AmySantiago",
         password: "brooklyn99",
         confirm: "brooklyn99",
         check: function(){}
         };
         var Jake = {
-        userName: "RexBuckingham",
+        username: "RexBuckingham",
         password: "MrFart",
         confirm: "MrFarp",
         check: function(){}
         };
-        var kiemTra =	function () {
-        if ((this.userName.length > 0) && (this.userName.length<20) && (this.password.length>=6 && this.password.length<=32) && (this.confirm == this.password)) {
-        alert("Valid.");
+        var Test =	function () {
+        if ((this.username.length > 0) && (this.username.length<20) && (this.password.length>=6 && this.password.length<=32) && (this.confirm == this.password)) {
+        alert("Pass.");
         }
         else {
-        alert("Invalid.");
+        alert("Fail.");
         }
         };
         //Test case bai4
-        //Amy.check=kiemTra; Amy.check(); => Valid
-        //Jake.check=kiemTra; Jake.check(); => Invalid
+        //Amy.check=Test; Amy.check(); => Pass;
+        //Jake.check=Test; Jake.check(); => Fail
     </script>
 </body>
 </html>
