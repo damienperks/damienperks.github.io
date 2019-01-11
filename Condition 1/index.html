@@ -53,29 +53,29 @@
         // (3) [2, 4, 8]
         //bai3([4,5,3,7,8,9,2,1,2,5,4,3,334]);
         //(6) [2, 2, 4, 4, 8, 334]
-        var hiep = {
-        userName: "hieptoan92",
-        password: "secretery",
-        confirm: "secretery",
+        var Amy = {
+        userName: "amysantiago",
+        password: "brooklyn99",
+        confirm: "brooklyn99",
         check: function(){}
         };
-        var cham = {
-        userName: "KaKa",
-        password: "12345",
-        confirm: "13452",
+        var Jake = {
+        userName: "RexBuckingham",
+        password: "MrFart",
+        confirm: "MrFarp",
         check: function(){}
         };
         var kiemTra =	function () {
         if ((this.userName.length > 0) && (this.userName.length<20) && (this.password.length>=6 && this.password.length<=32) && (this.confirm == this.password)) {
-        alert("Hợp lệ.");
+        alert("Valid.");
         }
         else {
-        alert("Không hợp lệ.");
+        alert("Invalid.");
         }
         };
         //Test case bai4
-        //hiep.check=kiemTra; hiep.check(); => Hợp lệ
-        //cham.check=kiemTra; cham.check(); => Không hợp lệ
+        //Amy.check=kiemTra; Amy.check(); => Valid
+        //Jake.check=kiemTra; Jake.check(); => Invalid
     </script>
 </body>
 </html>
