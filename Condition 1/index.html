@@ -20,22 +20,21 @@
                 document.write("Có ít nhất một giá trị không là số!</br>")
             }
         }
-//Bai 1
-//Test case
+//Test case bai1
 //bai1(4,6) => 6
 //bai1("y",true) => Có ít nhất một giá trị không là số!
-function bai2(a) {
-if (a>0) {
-var m = a;
-for (var i=1;i<m;i++) {
-a=a*(m-i);
-}
-return document.write(m + "!= " + a + "</br>");
-}
-else {
-document.write("Số âm không có giai thừa!");
-}
-}
+        function bai2(a) {
+            if (a>0) {
+                var m = a;
+                for (var i=1;i<m;i++) {
+                a=a*(m-i);
+                }
+            return document.write(m + "!= " + a + "</br>");
+            }
+            else {
+                document.write("Số âm không có giai thừa!");
+            }
+        }
 //Bai 2
 //Test case
 //bai2(-6) => Số âm không có giai thừa!
