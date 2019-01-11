@@ -32,7 +32,7 @@
             return document.write(m + "!= " + a + "</br>");
             }
             else {
-                document.write("Số âm không có giai thừa!");
+                alert("Số âm không có giai thừa!");
             }
         }
         //Test case bai2
@@ -67,10 +67,10 @@
         };
         var kiemTra =	function () {
         if ((this.userName.length > 0) && (this.userName.length<20) && (this.password.length>=6 && this.password.length<=32) && (this.confirm == this.password)) {
-        document.write("Hợp lệ.");
+        alert("Hợp lệ.");
         }
         else {
-        document.write("Không hợp lệ.");
+        alert("Không hợp lệ.");
         }
         };
         //Test case bai4
