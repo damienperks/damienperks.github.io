@@ -8,87 +8,83 @@
 </head>
 <body>
     <script>
-        var now = new Date();
-        var date = now.getDate();
-        var month = now.getMonth()+1;
-        var year = now.getFullYear();
-document.write("Today is: " + date + "/" + month + "/" + year + ".</br>");
+            var now = new Date();
+            var date = now.getDate();
+            var month = now.getMonth()+1;
+            var year = now.getFullYear();
+    document.write("Today is: " + date + "/" + month + "/" + year + ".</br>");
 
-        var season = "";
-    if (month<=3 && month>=1) {
-	    season = "Spring";
-    } else if (month<=6) {
-	    season = "Summer";
-    } else if (month<=9) {
-	    season = "Autumn";
-    } else {
-	    season = "Winter";
-    }
-document.write("This season is: " + season + ".</br");
-//Bai1
-//Test case
+            var season = "";
+        if (month<=3 && month>=1) {
+	        season = "Spring";
+        } else if (month<=6) {
+	        season = "Summer";
+        } else if (month<=9) {
+	        season = "Autumn";
+        } else {
+	        season = "Winter";
+        }
+    document.write("This season is: " + season + ".</br");
+        //Bai1
+        //Test case
         function cutstring(string) {
-	if (typeof string == "number") {
-		string = string.toString();
-	    }
-	if (string.length<10) {
-document.write(string+"</br>");
-	} else {	
-		for (var i = 0; i<10; i++) {
-document.write(string[i]);
-		};
-document.write("...</br>");
-	    }
-    }
-//Bai2
-//Test case
+	        if (typeof string == "number") {
+		    string = string.toString();
+	        }
+	        if (string.length<10) {
+    document.write(string+"</br>");
+	    } else {	
+		    for (var i = 0; i<10; i++) {
+    document.write(string[i]);
+		    };
+    document.write("...</br>");
+	        }
+        }
+        //Bai2
+        //Test case
         function Gradings(x) {
 	    var grade = "";
 	    if (x<=10 && x>=8.5) {
-		    grade = "Điểm A </br>";
+		    grade = "Grade A </br>";
 	    } else if (x>=7) {
-		    grade = "Điểm B </br>";
+		    grade = "Grade B </br>";
 	    } else if (x>=5.5) {
-		    grade = "Điểm C </br>";
+		    grade = "Grade C </br>";
 	    } else if (x>=4) {
-		    grade = "Điểm D </br>";
+		    grade = "Grade D </br>";
 	    } else {
-		    grade = "Điểm F </br>";
+		    grade = "Grade F </br>";
 	    }
 document.write(grade);
     }
-//Bai3
-//Test case
+        //Bai3
+        //Test case
         function translate(language) {
 	    switch (language) {
-		    case "Tiếng Anh" :
+		    case "English" :
         document.write("Hello</br>");
         break;
-		    case "Tiếng Việt" :
+		    case "Vietnamese" :
         document.write("Xin Chào</br>");
         break;
-		    case "Tiếng Pháp" :
+		    case "French" :
         document.write("Bonjour</br>");
         break;
-		    case "Tiếng Nga" :
+		    case "Russian" :
         document.write("Привет</br>");
         break;
-            case "Tiếng Nhật" :
+            case "Japanese" :
         document.write("おはよう ございます</br>");
         break;
-            case "Tiếng Đức" :
+            case "Germany" :
         document.write("Hallo</br>");
         break;
 	    }
     }
-//Bai4
-//Test case
-//Translate(Tiếng Anh);
-//Results: Hello
-//Bai 5
-//bai5([false,false,false,false,true,false]);
-//Ket qua: True xuất hiện lần đầu trong mảng tại vị trí: 5
-
+        //Bai4
+        //Test case
+        //Translate(English);
+        //Results: Hello
 function bai5(arr) {
 	for (var i = 0; i<arr.length;i++){
 		if (arr[i]==true) {
@@ -97,10 +93,9 @@ function bai5(arr) {
 		}
 	}
 }
-
-
-//Bai6
-
+        //Bai 5
+        //bai5([false,false,false,false,true,false]);
+        //Ket qua: True xuất hiện lần đầu trong mảng tại vị trí: 5
 function bai6() {
 	for (var i = 1; i<=100;i++){
 		if (i%2==0) {
@@ -110,8 +105,6 @@ function bai6() {
 		}
 	}
 }
-
-
 function sumAll(arr) {
     var all;
     all = arr[0]+arr[1];
