@@ -26,99 +26,109 @@
         }
     document.write("This season is: " + season + ".</br");
         //Test case bai1
-        function cutstring(string) {
-	        if (typeof string == "number") {
-		    string = string.toString();
+        function bai2(str) {
+	        if (typeof str == "number") {
+		    str = str.toString();
 	        }
-	        if (string.length<10) {
-    document.write(string+"</br>");
+	        if (str.length<10) {
+    document.write(str+"</br>");
 	    } else {	
 		    for (var i = 0; i<10; i++) {
-    document.write(string[i]);
+    document.write(str[i]);
 		    };
     document.write("...</br>");
 	        }
         }
         //Test case bai2
-        function Gradings(x) {
+        //console.log(bai2('4,5,6,7,8,9,1')); 
+        //Result: 4,5,6,7,8,...;
+        function bai3(x) {
 	    var grade = "";
 	    if (x<=10 && x>=8.5) {
-		    grade = "Grade A </br>";
-	    } else if (x>=7) {
-		    grade = "Grade B </br>";
-	    } else if (x>=5.5) {
-		    grade = "Grade C </br>";
-	    } else if (x>=4) {
-		    grade = "Grade D </br>";
-	    } else {
-		    grade = "Grade F </br>";
+		    grade = "Grade A";
+	    } 
+        else if (x>=7) {
+		    grade = "Grade B";
+	    } 
+        else if (x>=5.5) {
+		    grade = "Grade C";
+	    } 
+        else if (x>=4) {
+		    grade = "Grade D";
+	    } 
+        else if (0<=x<=3.9) {
+		    grade = "Grade F";
 	    }
     document.write(grade);
         }
         //Test case bai3
-        function translate(language) {
+        //console.log(bai3(9)); 
+        //Result: Grade A;
+        function bai4(lang) {
+        var language;
 	    switch (language) {
-		    case "English" :
-        document.write("Hello</br>");
+		    case English :
+        language = "Hello";
         break;
-		    case "Vietnamese" :
-        document.write("Xin Chào</br>");
+		    case Vietnamese :
+        language = "Xin Chào";
         break;
-		    case "French" :
-        document.write("Bonjour</br>");
+		    case French :
+        language = "Bonjour";
         break;
-		    case "Russian" :
-        document.write("Привет</br>");
+		    case Russian :
+        language = "Привет";
         break;
-            case "Japanese" :
-        document.write("おはよう ございます</br>");
+            case Japanese :
+        language = "おはよう ございます";
         break;
-            case "Germany" :
-        document.write("Hallo</br>");
+            case Germany :
+        language = "Hallo";
         break;
+        default: "Xin Chào";
 	    }
         }
         //Test case bai4
-        //Translate(English);
-        //Results: Hello
-function bai5(arr) {
-	for (var i = 0; i<arr.length;i++){
-		if (arr[i]==true) {
-			document.write("True xuất hiện lần đầu trong mảng tại vị trí: " + (i+1));
-			break;
-		}
-	}
-}
-        //Bai 5
-        //bai5([false,false,false,false,true,false]);
-        //Ket qua: True xuất hiện lần đầu trong mảng tại vị trí: 5
-function bai6() {
-	for (var i = 1; i<=100;i++){
-		if (i%2==0) {
+        function bai5(arr) {
+	        for (var i = 0; i<arr.length;i++){
+		    if (arr[i]==true) {
+		document.write("The first True is number: " + (i+1));
+			        break;
+		        }
+	        }
+        }
+        //Test case bai 5
+        //console.log(bai5([false, false, false, true, false, true, false, true]));
+        //Result: The first True is number: 4;
+        function bai6() {
+	        for (var i = 1; i<=100;i++){
+		    if (i%2==0) {
 			document.write("<p style=color:green;>" + i + "</p>");
-		} else {
+		        } else {
 			document.write("<p style=color:red;>" + i + "</p>");
-		}
-	}
-}
-function sumAll(arr) {
-    var all;
-    all = arr[0]+arr[1];
-    if (arr[0]==arr[1]){
-    return all;
-    } else if (arr[0]<arr[1]){
-    for (var i = arr[0]; i<arr[1];i++){
-        all = all + i + 1;
-    }
-    return all;
-    } else {
-    for (var i = arr[1]; i<arr[0];i++){
-        all = all + i + 1;
-    }
-    return all;
-    }
-    document.write(all);
-}
+		        }
+	        }
+        }
+        function sumAll(arr) {
+            var all;
+            all = arr[0]+arr[1];
+            if (arr[0]==arr[1]){
+            return all;
+            } else if (arr[0]<arr[1]){
+            for (var i = arr[0]; i<arr[1];i++){
+                all = all + i + 1;
+            }
+            return all;
+            } else {
+            for (var i = arr[1]; i<arr[0];i++){
+                all = all + i + 1;
+            }
+            return all;
+            }
+            document.write(all);
+        }
+        //Test case bai6
+        //console.log(bai6());
     </script>
 </body>
 </html>
