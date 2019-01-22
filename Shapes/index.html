@@ -72,10 +72,10 @@
 				canhDay(n);
 				for (var i = 1; i<n; i++) {
 					for (var y = 0; y < 2*i; y++){
-						document.write(" ")		//Ve nhung dau cach dau dong
+						document.write(" ")
 					}
-					z = 1 + 2*(n - 1 - i);  //Tinh so dau * co o dong thu i
-					canhConLai(z);			//Ve so dau * tuong ung voi dong thu i
+					z = 1 + 2*(n - 1 - i);
+					canhConLai(z);
 					document.write("</br>");
 				}
 				document.write("</pre");
@@ -105,7 +105,7 @@
 		}
 		function nuaTrenX(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
-				for (var x = 0; x<i; x++) {		//So dau cach dau dong tai dong i = i
+				for (var x = 0; x<i; x++) {
 					document.write(" ")
 				}
 				document.write("*");
@@ -118,7 +118,7 @@
 		}
 		function nuaDuoiX(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
-				for (var x = n/2 - 2 - i; x > 0; x--) {		//So dau cach dau dong tai dong i = n/2-2-i
+				for (var x = n/2 - 2 - i; x > 0; x--) {	
 					document.write(" ")
 				}
 				document.write("*");
@@ -164,7 +164,7 @@
 		}
 		function nuaDuoiBuom(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
-				for (var x = n/2 - 2 - i; x > 0; x--) {		//So dau * dau dong tai dong i = n/2-2-i
+				for (var x = n/2 - 2 - i; x > 0; x--) {		
 					document.write("* ")
 				}
 				document.write("*");
