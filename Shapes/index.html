@@ -28,8 +28,7 @@
 
 	<button onclick="printButterfly(17)">Try it</button>
 
-	<script type="text/javascript">
-		//Bai1
+	<script>
 		//Triangle
 		function printTrigangle(n) {
 			for (var i = 1; i <= n; i++) {
@@ -39,7 +38,6 @@
 				document.write("</br>");
 			}
 		}
-		//Bai2
 		//Empty Rectangle
 		function printEmptyRectangle(a,b) {
 			if (a>=3 && b>=3) {
@@ -64,37 +62,35 @@
 			}
 			document.write(" * </br>");
 		}
-		//Bai3
 		//Special Triangle
 		function printSpecialTrigangle(n) {
 			if (n>1) {
 				document.write("<pre>");
-				canhDay(n);
+				bottomedge(n);
 				for (var i = 1; i<n; i++) {
 					for (var y = 0; y < 2*i; y++){
 						document.write(" ")
 					}
 					z = 1 + 2*(n - 1 - i);
-					canhConLai(z);
+					edge(z);
 					document.write("</br>");
 				}
 				document.write("</pre");
 			}
 		}
-		function canhDay(n) { 
+		function bottomedge(n) { 
 			var x = 1 + 2*(n-1);
 			for (var y = 0; y < x; y++) {
 				document.write("* ");
 			}
 			document.write("</br>")
 		}
-		function canhConLai(n) {
+		function edge(n) {
 			for (var i = 0; i<n; i++) {
 				document.write("*");
 				document.write(" ");
 			}
 		}
-		//Bai4
 		//X
 		function printX(n) {
 			document.write("<pre>");
@@ -136,7 +132,6 @@
 			}
 			document.write("*</br>");
 		}
-		//Bai5
         //Butterfly
 		function printButterfly(n) {
 			document.write("<pre>");
