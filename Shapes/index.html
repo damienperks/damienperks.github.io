@@ -94,40 +94,40 @@
 		//X
 		function printX(n) {
 			document.write("<pre>");
-			nuaTrenX(n);
-			tamX(n);
-			nuaDuoiX(n);
+			upperhalfX(n);
+			middleX(n);
+			lowerhalfX(n);
 			document.write("</pre>");
 		}
-		function nuaTrenX(n) {
+		function upperhalfX(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
 				for (var x = 0; x<i; x++) {
 					document.write(" ")
 				}
 				document.write("*");
-				var cachGiuaDong = (n - 2 - 2*i);
-				for (var y = 0; y<cachGiuaDong; y++) {
+				var space = (n - 2 - 2*i);
+				for (var y = 0; y<space; y++) {
 					document.write(" ")
 				}
 				document.write("*</br>");
 			}
 		}
-		function nuaDuoiX(n) {
+		function lowerhalfX(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
 				for (var x = n/2 - 2 - i; x > 0; x--) {	
 					document.write(" ")
 				}
 				document.write("*");
-				var cachGiuaDong = (1 + 2*i);
-				for (var y = 0; y<cachGiuaDong; y++) {
+				var space = (1 + 2*i);
+				for (var y = 0; y<space; y++) {
 					document.write(" ")
 				}
 				document.write("*</br>");
 			}
 		}
-		function tamX(n) {
-			var cachDauDong = (n-1)/2
-			for (var i = 0; i<cachDauDong ; i++) {
+		function middleX(n) {
+			var space2 = (n-1)/2
+			for (var i = 0; i<space2 ; i++) {
 				document.write(" ");
 			}
 			document.write("*</br>");
@@ -135,19 +135,19 @@
         //Butterfly
 		function printButterfly(n) {
 			document.write("<pre>");
-			nuaTrenBuom(n);
-			tamBuom(n);
-			nuaDuoiBuom(n);
+			upperhalfButterfly(n);
+			middleButterfly(n);
+			lowerhalfButterfly(n);
 			document.write("</pre>");
 		}
-		function nuaTrenBuom(n) {
+		function upperhalfButterfly(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
 				for (var x = 0; x<i; x++) {		
 					document.write("* ")
 				}
 				document.write("*");
-				var cachGiuaDong = (n - 2 - 2*i);
-				for (var y = 0; y<cachGiuaDong; y++) {
+				var space = (n - 2 - 2*i);
+				for (var y = 0; y<space; y++) {
 					document.write("  ")
 				}
 				document.write(" ");
@@ -157,14 +157,14 @@
 				document.write("</br>")
 			}
 		}
-		function nuaDuoiBuom(n) {
+		function lowerhalfButterfly(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
 				for (var x = n/2 - 2 - i; x > 0; x--) {		
 					document.write("* ")
 				}
 				document.write("*");
-				var cachGiuaDong = (1 + 2*i);
-				for (var y = 0; y<cachGiuaDong; y++) {
+				var space = (1 + 2*i);
+				for (var y = 0; y<space; y++) {
 					document.write("  ")
 				}
 				document.write(" ");
@@ -174,13 +174,13 @@
 				document.write("</br>");
 			}
 		}
-		function tamBuom(n) {
-			var cachDauDong = (n-1)/2
-			for (var i = 0; i<cachDauDong ; i++) {
+		function middleButterfly(n) {
+			var space2 = (n-1)/2
+			for (var i = 0; i<space2 ; i++) {
 				document.write("* ");
 			}
 			document.write("* ");
-			for (var i = 0; i<cachDauDong ; i++) {
+			for (var i = 0; i<space2 ; i++) {
 				document.write("* ");
 			}
 			document.write("</br>")
