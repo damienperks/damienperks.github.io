@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bài tập vẽ hình</title>
-	<meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vẽ hình</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -42,11 +44,9 @@
 		function printEmptyRectangle(a,b) {
 			if (a>=3 && b>=3) {
 				border(a);
-				
 				for (var i = 0; i < (b-2); i++) {
 					mid(a);
 				}
-				
 				border(a);
 			}
 		}
@@ -69,9 +69,7 @@
 		function printSpecialTrigangle(n) {
 			if (n>1) {
 				document.write("<pre>");
-				
 				canhDay(n);
-				
 				for (var i = 1; i<n; i++) {
 					for (var y = 0; y < 2*i; y++){
 						document.write(" ")		//Ve nhung dau cach dau dong
@@ -80,7 +78,6 @@
 					canhConLai(z);			//Ve so dau * tuong ung voi dong thu i
 					document.write("</br>");
 				}
-				
 				document.write("</pre");
 			}
 		}
@@ -101,7 +98,6 @@
 		//X
 		function printX(n) {
 			document.write("<pre>");
-			
 			nuaTrenX(n);
 			tamX(n);
 			nuaDuoiX(n);
@@ -109,35 +105,27 @@
 		}
 		function nuaTrenX(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
-				
 				for (var x = 0; x<i; x++) {		//So dau cach dau dong tai dong i = i
 					document.write(" ")
 				}
-				
 				document.write("*");
-				
 				var cachGiuaDong = (n - 2 - 2*i);
 				for (var y = 0; y<cachGiuaDong; y++) {
 					document.write(" ")
 				}
-				
 				document.write("*</br>");
 			}
 		}
 		function nuaDuoiX(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
-				
 				for (var x = n/2 - 2 - i; x > 0; x--) {		//So dau cach dau dong tai dong i = n/2-2-i
 					document.write(" ")
 				}
-				
 				document.write("*");
-				
 				var cachGiuaDong = (1 + 2*i);
 				for (var y = 0; y<cachGiuaDong; y++) {
 					document.write(" ")
 				}
-				
 				document.write("*</br>");
 			}
 		}
@@ -152,7 +140,6 @@
         //Butterfly
 		function printButterfly(n) {
 			document.write("<pre>");
-			
 			nuaTrenBuom(n);
 			tamBuom(n);
 			nuaDuoiBuom(n);
@@ -160,13 +147,10 @@
 		}
 		function nuaTrenBuom(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
-				
 				for (var x = 0; x<i; x++) {		
 					document.write("* ")
 				}
-				
 				document.write("*");
-				
 				var cachGiuaDong = (n - 2 - 2*i);
 				for (var y = 0; y<cachGiuaDong; y++) {
 					document.write("  ")
@@ -180,13 +164,10 @@
 		}
 		function nuaDuoiBuom(n) {
 			for (var i = 0; i < (n/2-1);  i++) {
-				
 				for (var x = n/2 - 2 - i; x > 0; x--) {		//So dau * dau dong tai dong i = n/2-2-i
 					document.write("* ")
 				}
-				
 				document.write("*");
-				
 				var cachGiuaDong = (1 + 2*i);
 				for (var y = 0; y<cachGiuaDong; y++) {
 					document.write("  ")
@@ -195,24 +176,18 @@
 				for (var x = n/2 - 1 - i; x >= 0; x--) {		
 					document.write("* ")
 				}
-				
 				document.write("</br>");
 			}
 		}
 		function tamBuom(n) {
-			
 			var cachDauDong = (n-1)/2
-			
 			for (var i = 0; i<cachDauDong ; i++) {
 				document.write("* ");
 			}
-			
 			document.write("* ");
-			
 			for (var i = 0; i<cachDauDong ; i++) {
 				document.write("* ");
 			}
-			
 			document.write("</br>")
 		}
 	</script>
