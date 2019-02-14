@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DOM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-    		//Bai 1: Thay doi font chu ca 3 doan van
+    <style type="text/css">
+        body {
+            background-color: rgb(179, 179, 179);
+        }
+        
+        .box {
+            border: 11px solid rgb(0, 153, 255);
+            height: 400px;
+        }
+        
+        img {
+            width: 300px;
+            float: left;
+            padding: 0 15px 2px 15px;
+        }
+        
+        #p1 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+    <div class="box" style="max-height: 600px">
+        <p id="p1">
+            <a href='https://www.google.com'>
+                <img src="cactusjack.jpeg" alt="Cactus Jack">
+            </a>
+            After months of teasing, Jordan Brand has abruptly dropped the Travis Scott x Jordan 1 Retro High OG NRG “Cactus Jack” on Nike SNKRS during the Houston rapper’s 2019 GRAMMY performance. Celebrating the riveting performance from La Flame, James Blake and Earth, Wind & Fire, the shoes became available on the exclusive platform causing a widespread suspension of service on Nike’s website.
+        </p>
+        <p id="p2" class="no-img">Travis established aesthetic, the Air Jordan 1 Retro High OG NRG “Cactus Jack” features a mix of earthy brown nubuck and white leather accented by an interesting backward Swoosh design. Another unique detail comes in the form of a hidden stash
+            pocket at the stitched ankle collar. Cactus Jack heel embossing, retro Nike Air tongue tags and mismatched insoles serve as additional branding elements. Finishing up the design of the shoe is an off white midsole and dark brown rubber outsole.</p>
+        <p id="p3" class="no-img">Take an official look at Travis Scott x Jordan 1 Retro High OG NRG ”Cactus Jack” above and try your luck at getting a pair of Nike SNKRS now.</p>
+    </div>
+	<script type="text/javascript">
+			//Bai 1: Thay doi font chu ca 3 doan van
 			
 			function changeFontSize() {
 				var x = document.getElementById("coChuBai1").value;
@@ -105,42 +138,6 @@
 				}
 			}
 			for(let i=0;i<100;)console.log((++i%3?'':'fizz')+(i%5?'':'buzz')||i)
-    </script>
-    <style type="text/css">
-        body {
-            background-color: rgb(179, 179, 179);
-        }
-        
-        .box {
-            border: 11px solid rgb(0, 153, 255);
-            height: 400px;
-        }
-        
-        img {
-            width: 300px;
-            float: left;
-            padding: 0 15px 2px 15px;
-        }
-        
-        #p1 {
-            font-size: 20px;
-        }
-    </style>
-</head>
-
-<body>
-    <h1>Document Object Model</h1>
-    <div class="box" style="max-height: 600px">
-        <p id="p1" class="no-img">
-            <a href='https://www.google.com'>
-                <img src="cactusjack.jpeg" alt="Cactus Jack">
-            </a>
-            After months of teasing, Jordan Brand has abruptly dropped the Travis Scott x Jordan 1 Retro High OG NRG “Cactus Jack” on Nike SNKRS during the Houston rapper’s 2019 GRAMMY performance. Celebrating the riveting performance from La Flame, James Blake and Earth, Wind & Fire, the shoes became available on the exclusive platform causing a widespread suspension of service on Nike’s website.
-        </p>
-        <p id="p2" class="no-img">Travis established aesthetic, the Air Jordan 1 Retro High OG NRG “Cactus Jack” features a mix of earthy brown nubuck and white leather accented by an interesting backward Swoosh design. Another unique detail comes in the form of a hidden stash
-            pocket at the stitched ankle collar. Cactus Jack heel embossing, retro Nike Air tongue tags and mismatched insoles serve as additional branding elements. Finishing up the design of the shoe is an off white midsole and dark brown rubber outsole.</p>
-        <p id="p3" class="no-img">Take an official look at Travis Scott x Jordan 1 Retro High OG NRG ”Cactus Jack” above and try your luck at getting a pair of Nike SNKRS now.</p>
-    </div>
+		</script>
 </body>
-
 </html>
