@@ -6,49 +6,54 @@
     <title>DOM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .wrap {margin-right:10%;
+        .wrap {
+            margin-right:10%;
         margin-left: 10%;
-        .graph {text-indent: 30px;
+        .graph {
+            text-indent: 30px;
         text-align: justify;
         margin-left: 1%;
-        margin-right: 1%;}
-        h1{ text-align: center; font-size: 30px;}
+        margin-right: 1%;
+            }
+        h1{ 
+            text-align: center; font-size: 30px;
+            }
         </style>
         <script>
             function changeFontSize(x){
                 document.body.style.fontSize = x + "px";
             }
             function increaseFontSize(paragraph){
-            let txt = document.getElementById(paragraph);
-            let style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
-            let currentSize = parseFloat(style);
-            if (currentSize < 30){
-            txt.style.fontSize = (currentSize + 1) + 'px';}
-            else return 0;
+                let txt = document.getElementById(paragraph);
+                let style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+                let currentSize = parseFloat(style);
+                    if (currentSize < 30){
+                        txt.style.fontSize = (currentSize + 1) + 'px';}
+                    else return 0;
             }
             function decreaseFontSize(paragraph){
-            let txt = document.getElementById(paragraph);
-            let style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
-            let currentSize = parseFloat(style);
-            if (currentSize <= 11){
-            txt.style.fontSize = (currentSize - 1) + 'px';}
-            else return 0;
+                let txt = document.getElementById(paragraph);
+                let style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+                let currentSize = parseFloat(style);
+                    if (currentSize <= 11){
+                        txt.style.fontSize = (currentSize - 1) + 'px';}
+                    else return 0;
             }
             function changeColor(){
-            document.getElementById("p1").style.color="blue";
-            document.getElementById("p2").style.color="yellow";
-            document.getElementById("p3").style.color="red";
+                document.getElementById("p1").style.color="blue";
+                document.getElementById("p2").style.color="yellow";
+                document.getElementById("p3").style.color="red";
             }
             function changeBgColor(color){
-            document.body.style.backgroundColor = color;
+                document.body.style.backgroundColor = color;
             }
             function copyContent(paragraph1, paragraph2){
-            let p1=document.getElementById(paragraph1);
-            let p2=document.getElementById(paragraph2);
-            let p1Text = p1.innerText;
-            let p2Text = p2.innerText;
-            p1.innerText = p2Text;
-            p2.innerText = p1Text;
+                let p1=document.getElementById(paragraph1);
+                let p2=document.getElementById(paragraph2);
+                let p1Text = p1.innerText;
+                let p2Text = p2.innerText;
+                    p1.innerText = p2Text;
+                    p2.innerText = p1Text;
             }
         </script>
 </head>
