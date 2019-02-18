@@ -1,5 +1,5 @@
         function bai1(a, b) {
-            if (typeof a == "number" && typeof b == "number")
+            if (typeof a == "number" && typeof b == "number"){
             if(a>b){
                 return a;
                 } else {
