@@ -13,6 +13,15 @@ div.button {
     flex: 1;
 }
 
+div.buttons {
+    flex: 25%;
+    height: 100%;
+}
+
+div.buttons {
+    flex: 1;
+}
+
 div.wrap {
     display: flex;
     flex-direction: column;
@@ -48,7 +57,16 @@ button {
     font-weight: bold;
     font-size: 25px;
     color: black;
-    background-color: transparent;
+    background-color: whitesmoke;
+}
+
+buttons {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    background-color: orangered;
 }
 
 span#screen {
@@ -62,4 +80,5 @@ div.screen {
     border: 2px outset buttonface;
     display: flex;
     align-items: center;
+    background-color: rgb(151, 151, 151);
 }
