@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-size: 25px;
+    color: black;
+}
+
+div.button {
+    flex: 25%;
+    height: 100%;
+}
+
+div.button {
+    flex: 1;
+}
+
+div.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 466px;
+}
+
+div.row {
+    display: flex;
+    height: 20%;
+}
+
+div.left {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.right {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    background-color: transparent;
+}
+
+span#screen {
+    display: inline-block;
+    margin: 15px;
+}
+
+div.screen {
+    flex: 3;
+    border: 2px outset buttonface;
+    display: flex;
+    align-items: center;
+}
