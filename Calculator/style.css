@@ -57,6 +57,7 @@ span#screen {
 }
 
 div.screen {
+    font-family: Arial, Helvetica, sans-serif;
     flex: 3;
     border: 2px outset buttonface;
     display: flex;
