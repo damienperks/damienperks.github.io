@@ -1,14 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <script src="main.js"></script>
 </head>
+
 <body>
-    
+    <div class="left">
+        <div class="wrap">
+            <div class="row">
+                <div class="screen">
+                    <span id="screen"></span>
+                </div>
+                <div class="button">
+                    <button onclick="reset()">AC</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button">
+                    <button onclick="square()">x&sup2</button>
+                </div>
+                <div class="button">
+                    <button onclick="factorial()">x!</button>
+                </div>
+                <div class="button">
+                    <button onclick="sqrt()">&#8730;x</button>
+                </div>
+                <div class="button">
+                    <button onclick="percent()">%</button>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="button">
+                    <button onclick="number(this)">7</button>
+                </div>
+                <div class="button">
+                    <button onclick="number(this)">8</button>
+                </div>
+                <div class="button">
+                    <button onclick="number(this)">9</button>
+                </div>
+                <div class="button">
+                    <button onclick="operation(this)">&divide;</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button">
+                    <button onclick="number(this)">4</button>
+                </div>
+                <div class="button">
+                    <button onclick="number(this)">5</button>
+                </div>
+                <div class="button">
+                    <button onclick="number(this)">6</button>
+                </div>
+                <div class="button">
+                    <button onclick="operation(this)">&#215;</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button">
+                    <button onclick="number(this)">1</button>
+                </div>
+                <div class="button">
+                    <button onclick="number(this)">2</button>
+                </div>
+                <div class="button">
+                    <button onclick="number(this)">3</button>
+                </div>
+                <div class="button">
+                    <button onclick="operation(this)">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button">
+                    <button onclick="number(this)">.</button>
+                </div>
+                <div class="button">
+                    <button onclick="number(this)">0</button>
+                </div>
+                <div class="button">
+                    <button onclick="equal()">=</button>
+                </div>
+                <div class="button">
+                    <button onclick="operation(this)">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div clas="right"></div>
 </body>
+
 </html>
