@@ -11,11 +11,18 @@ function getUsers() {
     });
 }
 
-function createUser(user) {
+function createUser() {
+    user1 = {
+        name: $('#name1').val(),
+        phone: $('#phone1').val(),
+        gender: $('input[name=gender1]:checked').val(),
+        facebook: $('#facebook').val(),
+    }
+
     $.ajax({
         method: "POST",
+        data: user1,
         url: "http://localhost:3000/users",
-        data: user,
     }).done(function(users) {
         getUsers();
     });
