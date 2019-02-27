@@ -15,18 +15,11 @@
       "id": 2
     },
     {
-      "name": "Đạt",
-      "gender": "Nam",
-      "facebook": "dat@gmail.com",
-      "phone": "220983423785",
-      "id": 3
-    },
-    {
-      "name": "Nhật",
-      "gender": "Nam",
-      "facebook": "abc@gmail.com",
-      "phone": "8294593468",
-      "id": 4
+      "name": "Tú",
+      "phone": "3487535789356",
+      "gender": "Nữ",
+      "facebook": "tu@gmail.com",
+      "id": 5
     }
   ]
 }
