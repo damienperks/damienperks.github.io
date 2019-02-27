@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "Sỹ Minh",
+      "gender": "Nam chuyển giới",
+      "facebook": "ngu@gmail.com",
+      "phone": "69696969",
+      "id": 1
+    },
+    {
+      "name": "Khoa",
+      "gender": "Nam",
+      "facebook": "khoa@gmail.com",
+      "phone": "235828599",
+      "id": 2
+    },
+    {
+      "name": "Đạt",
+      "gender": "Nam",
+      "facebook": "dat@gmail.com",
+      "phone": "220983423785",
+      "id": 3
+    },
+    {
+      "name": "Nhật",
+      "gender": "Nam",
+      "facebook": "abc@gmail.com",
+      "phone": "8294593468",
+      "id": 4
+    }
+  ]
+}
