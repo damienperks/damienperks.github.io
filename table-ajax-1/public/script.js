@@ -15,7 +15,7 @@ function createUser() {
     user1 = {
         name: $('#name1').val(),
         phone: $('#phone1').val(),
-        gender: $('input[name=gender1]:checked').val(),
+        gender: $('input[name=gender]:checked').val(),
         facebook: $('#facebook').val(),
     }
 
@@ -24,8 +24,12 @@ function createUser() {
         data: user1,
         url: "http://localhost:3000/users",
     }).done(function(users) {
-        getUsers();
+        redirect();
     });
+}
+
+function redirect() {
+    location.href = 'http://localhost:3000'
 }
 
 function deleteUser(id) {
@@ -57,7 +61,8 @@ function renderContent(users) {
         htmlContent += '<td>' + users[i].gender + '</td>';
         htmlContent += '<td>' + users[i].facebook + '</td>';
         htmlContent += '<td>' + users[i].phone + '</td>';
-        htmlContent += '<td>' + users[i].image + '</td>';
+        htmlContent += '<td>' + '<button type="button" onclick="deleteUser(' + users[i].id + ')"> Delete </button> <button> Edit </button>'
+        '</td>';
 
         htmlContent += '</tr>';
     }
