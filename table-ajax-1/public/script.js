@@ -33,12 +33,15 @@ function redirect() {
 }
 
 function deleteUser(id) {
-    $.ajax({
-        method: "DELETE",
-        url: "http://localhost:3000/users/" + id
-    }).done(function(users) {
-        getUsers();
-    });
+    var r = confirm("Delete?");
+    if (r == true) {
+        $.ajax({
+            method: "DELETE",
+            url: "http://localhost:3000/users/" + id
+        }).done(function(users) {
+            getUsers();
+        });
+    }
 }
 
 function updateUser(id, user) {
