@@ -21,7 +21,12 @@ html {
     float: right;
 }
 
-.button {
+.button-left {
+    width: 90px;
+    height: 30px;
+}
+
+.button-right {
     width: 90px;
     height: 30px;
 }
