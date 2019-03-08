@@ -47,22 +47,23 @@ html {
 }
 
 @media screen and (max-width:768px) {
+    .header {
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
     .button-left {
         width: 60px;
         height: 30px;
-        display: flex;
-        justify-content: space-between;
+        margin-right: 0;
     }
     .buttonleft {
         width: 60px;
         height: 30px;
-        display: flex;
-        justify-content: space-between;
     }
     .button-right {
         width: 60px;
         height: 30px;
-        display: flex;
-        justify-content: space-between;
     }
 }
