@@ -36,4 +36,14 @@ html {
     margin: 15px;
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .button-left {
+        width: 60px;
+        height: 30px;
+        margin-right: 0;
+    }
+    .button-right {
+        width: 60px;
+        height: 30px;
+    }
+}
