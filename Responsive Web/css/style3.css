@@ -36,6 +36,10 @@ html {
     margin: 15px;
 }
 
+.img {
+    width: 100%;
+}
+
 @media screen and (max-width:768px) {
     .button-left {
         width: 60px;
@@ -45,8 +49,5 @@ html {
     .button-right {
         width: 60px;
         height: 30px;
-    }
-    .bottom {
-        width: 100%;
     }
 }
