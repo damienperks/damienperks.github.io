@@ -27,6 +27,12 @@ html {
     margin-right: 15px;
 }
 
+.buttonleft {
+    width: 90px;
+    height: 30px;
+    margin-right: 15px;
+}
+
 .button-right {
     width: 90px;
     height: 30px;
@@ -44,10 +50,19 @@ html {
     .button-left {
         width: 60px;
         height: 30px;
-        margin-right: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttonleft {
+        width: 60px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
     }
     .button-right {
         width: 60px;
         height: 30px;
+        display: flex;
+        justify-content: space-between;
     }
 }
