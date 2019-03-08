@@ -46,4 +46,7 @@ html {
         width: 60px;
         height: 30px;
     }
+    .bottom {
+        width: 100%;
+    }
 }
