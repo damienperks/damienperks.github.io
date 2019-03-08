@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    float: left;
+}
+
+.topleft {
+    float: left;
+}
+
+.topright {
+    float: right;
+}
+
+.button {
+    width: 90px;
+    height: 30px;
+}
+
+.bottom {
+    padding: 15px;
+}
