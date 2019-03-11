@@ -7,3 +7,9 @@ html {
     padding: 0;
     margin: 0;
 }
+
+.li {
+    float: right;
+}
+
+@media screen and (max-width:768px) {}
