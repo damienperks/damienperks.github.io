@@ -8,4 +8,6 @@ html {
     margin: 0;
 }
 
-.header {}
+.nav-item {
+    float: right;
+}
