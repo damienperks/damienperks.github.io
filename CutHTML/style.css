@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -70,8 +71,8 @@ body, html {
 
 .menu {
     position: absolute;
-    top: calc(50% - 9px);
-    left: calc(416px);
+    top: 10px;
+    left: 170px;
     float: left;
     font-size: 17px;
     width: 277px;
@@ -131,18 +132,24 @@ body, html {
 }
 
 .text-lv1-1 {
+    font-family: 'Aileron';
+    font-weight: bold;
     position: absolute;
     top: 1px;
     left: 3px;
 }
 
 .text-lv1-2 {
+    font-family: 'Aileron';
+    font-weight: bold;
     position: absolute;
     bottom: -9px;
     left: 3px;
 }
 
 .text-lv1-3 {
+    font-family: 'Aileron';
+    font-weight: bold;
     position: absolute;
     bottom: -61px;
     left: 3px;
@@ -401,7 +408,7 @@ body, html {
     position: absolute;
     top: 38px;
     left: 28px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 19px;
 }
 
