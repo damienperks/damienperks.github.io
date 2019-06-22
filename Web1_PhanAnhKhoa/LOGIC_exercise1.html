@@ -135,6 +135,12 @@
         function checkSymmetricString(str) {
             // trả về true nếu đối xưng
             //trả về false nếu KO đỗi xứng
+            for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] != str[str.length - i - 1]) {
+            return false;
+        }
+    }
+    return true;
         }
         function main(){
             input.forEach(str => {
