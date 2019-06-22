@@ -29,7 +29,12 @@ function bai3(str1, str2){
 
 }
 function bai4(str){
-
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] != str[str.length - i - 1]) {
+            return false;
+        }
+    }
+    return true;
 }
 
     </script>
