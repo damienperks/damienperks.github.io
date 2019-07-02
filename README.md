@@ -1,1 +1,1 @@
-Please stan
+Please stand
