@@ -1,1 +1,1 @@
-Please stand b
+Please stand by.
