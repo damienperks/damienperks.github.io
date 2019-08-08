@@ -1,1 +1,1 @@
-Please stand by. Working on a project. CLUB to be precis
+Please stand by. Working on a project. CLUB to be precise.
