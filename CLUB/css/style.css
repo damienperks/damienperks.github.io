@@ -90,6 +90,14 @@ ol {
     height: 100%;
     padding: 0 25px;
     box-sizing: border-box;
+    background-color: #000000;
+}
+
+#rectangle {
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 #wrapper {
@@ -125,6 +133,7 @@ ol {
     left: 0;
     text-align: center;
     z-index: 1;
+    background-color: #666;
 }
 
 .position-right {
@@ -265,7 +274,7 @@ ul.menu-top-bar li a {
     padding: 0 20px;
     font-size: 15px;
     font-weight: 700;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -346,7 +355,7 @@ ul.menu-top-bar li a {
 }
 
 .shopping-cart-outer .shopping-cart-header .header-cart i {
-    color: #30271c;
+    color: #ffffff;
     font-size: 18px;
     vertical-align: middle;
     position: relative;
