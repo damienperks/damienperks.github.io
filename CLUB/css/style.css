@@ -260,7 +260,7 @@ ul.menu-top-bar li a {
 
 .main-menu>ul>li:last-child:after {
     content: " ";
-    border-right: 2px solid rgba(0, 0, 0, .5);
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
     width: 2px;
     height: 25px;
     display: inline-block;
@@ -275,7 +275,7 @@ ul.menu-top-bar li a {
     font-size: 15px;
     font-weight: 700;
     color: #ffffff;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
@@ -289,7 +289,7 @@ ul.menu-top-bar li a {
     display: none;
     position: absolute;
     top: calc(100% + 1px);
-    background-color: #FFF;
+    background-color: #fff;
     left: 0;
     right: auto;
     z-index: 999;
@@ -367,7 +367,7 @@ ul.menu-top-bar li a {
     top: 18px;
     right: 3px;
     font-size: 9px;
-    color: #FFF;
+    color: #fff;
     background-color: #000000;
     display: inline-block;
     vertical-align: middle;
@@ -375,7 +375,7 @@ ul.menu-top-bar li a {
     width: 16px;
     line-height: 16px;
     text-align: center;
-    font-family: 'Open Sans', serif;
+    font-family: "Open Sans", serif;
     font-weight: 700;
 }
 
@@ -404,4 +404,51 @@ ul.menu-top-bar li a {
     padding-right: 1%;
     vertical-align: top;
     width: 200px;
+}
+
+#main {
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.main-inner {}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
 }
