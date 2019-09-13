@@ -379,21 +379,21 @@ ul.menu-top-bar li a {
     font-weight: 700;
 }
 
-.search-barista {
+.search-club {
     display: inline-block;
     vertical-align: middle;
     height: 100%;
     line-height: 100%;
 }
 
-.search-barista i {
+.search-club i {
     position: absolute;
     top: 26px;
     right: 6px;
     cursor: pointer;
 }
 
-.search-barista input[type="text"] {
+.search-club input[type="text"] {
     border: 1px solid rgba(48, 39, 28, 1);
     color: #30271c;
     display: inline-block;
