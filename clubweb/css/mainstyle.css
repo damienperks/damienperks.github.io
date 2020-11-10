@@ -1,0 +1,112 @@
+* {
+    font-family: 'Open Sans','Oswald', sans-serif;
+}
+.oswald-40-bold {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+.oswald-40-regular {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+.oswald-30-regular {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.oswald-15-regular {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.oswald-15-bold {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+.opensans-40-bold {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+.opensans-30-regular {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8375rem;
+    line-height: 2.8125rem;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.opensans-24-regular {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.opensans-24-bold {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+.opensans-15-regular {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.opensans-15-bold {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+.text-button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 3rem;
+    border:none;
+    outline: none;
+}
+.bg-black {
+    background-color: #000000;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.color-black {
+    color:#000000!important;
+}
+.color-white {
+    color:#ffffff!important;
+}
+.color-gray {
+    color:#d6d6d6;
+}
+@media (min-width: 1700px) {
+    .container {
+        max-width: 1640px;
+    }
+}

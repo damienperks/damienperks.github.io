@@ -1,0 +1,27 @@
+/*LOGIN*/
+#login-bar {
+    padding-top: 0.25rem;
+}
+#login-bar ul {
+    justify-content: space-between;
+}
+/*ENDLOGIN*/
+/*NAVBAR*/
+nav.navbar.navbar-expand-lg {
+    padding:0.5rem 0!important;
+}
+#navbarSupportedContent {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-nav li:not(:last-child) {
+    margin-right: 4rem;
+}
+.navbar-nav li:last-child {
+    margin-right: 1.5rem;
+}
+.navbar-collapse form .form-control {
+    border-radius: 0!important;
+    padding:0.5rem 1rem;
+}
+/*ENDNAVBAR*/
